@@ -10,7 +10,7 @@ CAMINHO_BACKEND = r"C:\Users\matheus.teodoro\Desktop\PYTHON\DUIMP_WESTROCK\backe
 CAMINHO_ARQUIVO_BACKEND = r"C:\Users\matheus.teodoro\Desktop\PYTHON\Catalogo WESTROCK - DUIMP 12092025.xlsx"
 CAMINHO_SAIDA = r"C:\Users\matheus.teodoro\Desktop\PYTHON\Resultado_WESTROCK_PROCESSADO.xlsx"
 
-st.title("📦 Processar Catálogo WESTROCK")
+st.title("📦 Processar Catálogo")
 st.write("Envie o arquivo Excel e clique em **Processar Arquivo**.")
 
 uploaded = st.file_uploader("Selecione o arquivo Excel", type=["xlsx"])
@@ -56,4 +56,5 @@ if uploaded:
                 file_name="Resultado_WESTROCK_PROCESSADO.xlsx",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
+
 
