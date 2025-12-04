@@ -30,8 +30,9 @@ if uploaded:
         # 2 - Executar o backend como script externo
         try:
             subprocess.run(
-                ["python", CAMINHO_BACKEND],
+                f'python "{CAMINHO_BACKEND}"',
                 check=True,
+                shell=True,
                 capture_output=True,
                 text=True
             )
@@ -55,3 +56,4 @@ if uploaded:
                 file_name="Resultado_WESTROCK_PROCESSADO.xlsx",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
+
